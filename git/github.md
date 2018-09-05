@@ -41,7 +41,7 @@
 - git push -u origin master
 - git add `.` 해도 .gitignore 파일은 업로드 안됨!
 
-## githup page에서 수정했을때
+## github page에서 수정했을때
 - 터미널에서 git pull하면 내 로컬에서 반영됨.
 ```
 git pull origin master
