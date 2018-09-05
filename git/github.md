@@ -43,4 +43,6 @@
 
 ## githup page에서 수정했을때
 - 터미널에서 git pull하면 내 로컬에서 반영됨.
-- git pull origin master
+```
+git pull origin master
+```
