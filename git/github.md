@@ -39,3 +39,4 @@
 #### 원래 내 로컬에서 markdown 했는데, pull하면서 폴더가 2개가 됨. 어디서 편집?
 - 파일 수정 후 터미널에서 commit 하면됨!
 - git push -u origin master
+- git add `.` 해도 .gitignore 파일은 업로드 안됨!
