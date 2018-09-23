@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import url("normalize.css");
+@import url("fonts.css");
+
+/* Eric Meyer꺼 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+.member li:nth-child(-n+2)::after {
+  margin-left: 15px;
+  content : "|" ;
+}
+
+/* 초기화 스타일 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.header, .member-container, .main, .slogan, .footer, .navigation{
+  margin: 0 auto;
+}
+.main, .member-container, .slogan, .footer, .navigation{
+  width: 1000px;
+}
+.readable-hidden {
+  position: absolute;
+  width : 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+}
+/* header */
+/* .logo {
+  position: absolute;
+  top: 18px;
+  left: 50px;
+} */
+/* member */
+/* .member-container{
+  position: relative;
+  height:100px;
+}
+.member{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 1.5rem;
+}
+.member li{
+  display: inline-block;
+  margin-right: 15px;
+} */
+/* nav */
+/* .navigation{
+  position: relative;
+  width: 100vw;
+  height: 28vh;
+  background-color: #988574;
+  border-top: 2px solid #181818;
+  border-bottom: 2px solid #181818;
+}
+.menu{
+  position: absolute;
+  left: 15vw;
+} 
+.menu-item{
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+  font-size: 0; 
+  padding: 2px 0;
+  margin-right: 15px;
+}
+.menu-item span{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+  padding: 0 20px;
+  display: block;
+  line-height: 7rem;
+} */
+/* sub-menu */
+/* .sub-menu{
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 15px 35px;
+}
+.sub-menu a:focus, .sub-menu a:hover{
+  color: yellow;
+}
+.sub-menu li{
+  font-size: 1.7rem;
+  line-height: 3.8rem;
+}
+.main{
+  height: 500px;
+  background-color: powderblue;
+}
+.slogan{
+  height: 10vh;
+  background-color: purple;
+}
+.footer-bg{
+  background-color: rosybrown;
+}
+.footer{
+  height: 10vh;
+  background-color: pink;
+} */
+

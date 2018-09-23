@@ -46,3 +46,54 @@
 ```
 git pull origin master
 ```
+
+## 여기서 잠시!
+### git fetch + merge
+```
+git pull
+```
+### git fetch + merge + add : 권장
+```
+git pull --rebase origin master
+git pull --rebase upstream master
+```
+
+- Fork : 복사해올 수 있음
+- 내 project에 반영할 수 있음
+- 공동 파일 > fork > 내 로컬 => push -> `app`
+- branch는 왜 사용할까 ? 
+ + 프로젝트의 일부분에 신규기능 개발중에 이슈 > 보안 > 내보내면 > 다른것도 전부보임 => 그래서 보안만 작업중인 branch가 필요
+ + 협업을 쉽게 하기 위해
+ + github의 issue를 사용해서 협업
+
+### git stash
+- upstream 혹은 origin의 최신 소스를 가져오고 싶은데 내 저장소의 내용이 커밋되지 않을 때 임시저장
+
+## Commit -m "무의미한 내용은 지양"
+- [좋은 커밋메시지 작성하는 7가지 방법]()
+ + 첫글자 대문자
+ + 제목의 끝에 마침표를 쓰지 않는다
+ + 무엇과 왜
+ + 수정
+ ```
+ git commit --amend
+ ```
+
+## git-flow 브랜치 이해하기
+- 메인 브랜치, 보조 브랜치 이름(삭제될 수 있는)
+
+## 형식에 맞게 리풀리퀘스트 보내기
+- 제목, 본문 이슈번호 : 이슈에 label 색 지정할 수 있음
+ + 이슈 !
+- 스타일체크 : 플러그인설치로 확인
+- 테스트 통과 확인
+- 성공한 프로젝트의 프로젝트 관리를 보고 배우기
+
+## 공동저장소 
+- setting > organizations > new / leave
+- git clone URL : Fork주소
+- git remote -v
+- git remote add upstream URL : 협업주소
+
+- git pull origin master
+- git push origin master
