@@ -53,6 +53,7 @@ body{
 h1{
   padding: 15px;
 }
+/* searchbara 영역 */
 .search-container{
   position: absolute;
   right: 15px;
@@ -62,9 +63,7 @@ input[name="search"]{
   width: 300px;
   height: 22px;
 }
-/* searchbar */
-
-/* member영역 */
+/* header - member영역 */
 .member {
   display: flex;
   float: right;
@@ -86,7 +85,7 @@ input[name="search"]{
   display: flex;
   justify-content: space-between;
   background: #988574;
-  padding-top: 32px;
+  padding: 30px 0 5px 0;
 }
 .menu-item span{
   font-size: 1.2rem;
@@ -95,43 +94,120 @@ input[name="search"]{
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
 .sub-menu{
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .sub-menu li{
-  line-height: 45px;
-  text-indent: 18px;
+  line-height: 42px;
+  text-indent: 15px;
   color: #fff;
 }
 /* main영역 */
 .main{
   display: grid;
-  grid-template : 600px 280px / 320px 320px 320px ;
-  grid-gap: 20px;
+  grid-template : 600px 280px / 310px 385px 260px ;
+  grid-gap: 15px;
   width: 1000px;
   margin: 0 auto;
-  height: 900px;
-  background: red;
+  height: 895px;
+  font-size: 0.9rem;
 }
+.recommend-book, .news, .board, .favorite-site, .twitter{
+  padding: 15px 0 15px 0;
+}
+h2{
+  width:58px;
+  height: 58px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background: url("../images/sprite_main.png") no-repeat;
+  text-indent: 65px;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+h2 span{
+  display: block;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.recommend-book-heading span{
+  color: #abd375;
+}
+.news-heading{
+  background-position: 0 40%;
+}
+.news-heading span{
+  color: #e8ca58;
+}
+.board-heading{
+  background-position: 0 20%;
+}
+.board-heading span{
+  color:#c7b39a;
+}
+.twitter-heading{
+  background-position: 0 80%;
+}
+.twitter-heading span{
+  color: #6aaee6;
+}
+.favorite-site-heading{
+  background-position: 0 60%;
+}
+.favorite-site-heading span{
+  color: #eea60a;
+}
+
+/* 책추천 영역 */
 .recommend-book{
-  background: pink;
+  line-height: 1.4rem;
 }
+.img-container{
+  width: 70%;
+  margin: 0 auto;
+}
+.img-container img{
+  width: 100%;
+  height: auto;
+}
+.img-container figcaption{
+  text-align: center;
+}
+.recommend-book-info{
+  text-align: center;
+}
+.recommend-book-star{
+  color : #abd375;
+  font-size: 1.8rem;
+}
+/* 뉴스 */
 .news{
-  background: tomato;
   grid-column: 2 / 4;
 }
+.video-container{
+  width:100%;
+}
+.video{
+  width:100%;
+  height: auto;
+}
+/* 게시판 */
 .board{
   background: orange;
 }
+/* 인기사이트 */
 .favorite-site{
   background: skyblue;
 }
+/* 트위터 */
 .twitter{
   background: gray;
 }
+/* 슬로건 */
 .slogan{
   height: 10vh;
   background: yellow;
 }
+/* 푸터 */
 .footer-bg{
   background: greenyellow;
 }
