@@ -178,8 +178,8 @@ Math.ceil // 올림
 Math.floor // 내림
 Math.round // 반올림
 Math.trunc // 소수점 아래 잘라내기
-Math.max 제일 큰 숫자 반환
-Math.min 제일 작은 숫자 반환
+Math.max //제일 큰 숫자 반환
+Math.min //제일 작은 숫자 반환
 Math.max(1,3,6)
 Math.random //0과1사이에 아무 실수나 반환
 주사위
