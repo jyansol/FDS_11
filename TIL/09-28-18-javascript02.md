@@ -15,7 +15,7 @@ javascript!
   + '\'' => ' 의 값이 들어있음
   + 문자열 안에 \ 를 넣고 싶을때, \ 하나는 생략되기 때문에 \\ 해야함.
   + `\n` `\r` => enter 효과 : 운영체제 마다 enter 입력키가 다름
-  + \r\n (윈도우) \r (맥)
+  + 1. Line Feed (\n) 2. Carage Return + Line Feed (\r\n)
 - http://graphemica.com/
   + Unicode Code Point 문자에 매겨진 번호
   + \uXXXX (4자리) \u{X...} (5자리)
