@@ -5,6 +5,3 @@
 # Javascript 
 - NaN : undefined와 숫자와 연산
 - .slice() 는 배열을 복사할 때도 사용된다!
-
-
-- 
