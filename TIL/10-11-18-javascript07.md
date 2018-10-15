@@ -6,7 +6,7 @@
   + forEach, map, reduce, filter, sort, every, some, find
   + bind 함수를 반환하는 함수
   + `콜백(callback)` : 다른 함수의 인수로 넘겨지는 함수
-- 클로저 (Closure) 
+- `클로저 (Closure) `
   + 바깥 스코프에 있는 변수를 가져다 사용하는 함수 !
   + 변수가 저장되는 저장소
 ```js
@@ -85,9 +85,9 @@ fiboRec(7);
   + 속성은 지울 수도 있지만, 삭제 되지 않는 것도 있음 ex) delete Math.PI;
   + 객체의 부수속성을 알아보려면, Object.getOwnPropertyDescriptor라는 정적 메소드를 사용해 부수속성을 나타내는 객체를 얻을 수 있습니다. 이 객체를 일러 속성 기술자(property descriptor), Descriptor 라고 부릅니다. 
     * value: 속성에 어떤 값이 저장되어 있는지를 나타냅니다.
-    *  writable: 변경할 수 있는 속성인지를 나타냅니다.
-    *  enumerable: 열거 가능한 속성인지를 나타냅니다.
-    *  configurable: 부수속성을 변경하거나 속성을 삭제할 수 있는지를 나타냅니다.
+    * writable: 변경할 수 있는 속성인지를 나타냅니다.
+    * enumerable: 열거 가능한 속성인지를 나타냅니다.
+    * configurable: 부수속성을 변경하거나 속성을 삭제할 수 있는지를 나타냅니다.
   + Object.getOwnPropertyDescriptors
   + enumerable: true, 을 해주지 않으면 default가 false
   + 접근자 속성을 쓰지 않고, 속성 값을 변경해야한다면 객체의 속성을 변경해도 다른 객체의 속성값이 영향받지 않음.
