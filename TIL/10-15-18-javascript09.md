@@ -74,7 +74,7 @@ for(const char of 'hello'){
 - Map() VS obj
 ```js
 const m = new Map();
-m.set('hello', 'world');
+m.set('hello', 'world'); // 'key', 'value'
 console.log(m.get('hello')); // 'world'
 // map()의 키로 아무거나 다 사용가능함. 객체는 문자열이나 심볼밖에 안됐는데!
 const obj = {a : 1}
@@ -118,6 +118,6 @@ obj.hello
   + 01.capturing 단계에서 이벤트 리스너가 등록되게 만들 수 있음!
     * }, true 입력 => 이벤트가 어느 시점에서 시작해야할지 변경 ?
   > 필요에 따라 사용함. 
-    
+
   + e.preventDefault() : 이벤트가 일으키는 브라우저의 기본 동작과정을 취소하기
     * 이벤트 전파를 막음

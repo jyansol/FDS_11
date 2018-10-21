@@ -8,8 +8,7 @@
 - 웹접근성
   + 메뉴를 건너뛰고 본문으로 바로 갈 수 있는 기능이 있어야 한다.
 
-
-  # javaScript
+# javaScript
 
 - javascript 언어 + 브라우저사용법(구동환경)
 - repl에 node 어쩌구 뜨면 안됨
@@ -21,8 +20,6 @@
 05. === vs ==(타입이 달라도 같게봄)
 06. Number.isFinite(1);
 07. number 타입과 다른 타입의 연산은 웬만하면 피하는 것이 좋습니다.
-
-
 
 ```js
 const obj = {
@@ -169,10 +166,6 @@ if (Number.isNaN(num)) {
 - Math
 ```js
 Math 객체
-Math.abs(3)
-Math.ceil(3.1)
-Math.floor(-3.6)
-Math.trunc(-3.6)
 Math.abs // 절댓값
 Math.ceil // 올림
 Math.floor // 내림
