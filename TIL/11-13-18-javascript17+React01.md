@@ -1,8 +1,9 @@
 # React
+- [리액트의 구조를 알아보자](https://codepen.io/jyansol/pen/jQMJrZ?editors=0110)
 - 컴포넌트와 엘리먼트(return 아래의 코드)는 다르다!
 - board는 square한테 props을 줄 수 있지만, 반대는 안됨
 - `화면을 그리기 위해서 상태를 바꿈`
-- board에서 상태를 바꿔주는 함수를 만들어서 props을 통해 square에게 내려줌
+- props는 객체의 속성
 
 
 ## JXS
