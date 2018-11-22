@@ -8,41 +8,54 @@
 
 ## JXS
 - 자바스크립트의 확장 문법
-- DOM attributes 문법이 html이랑 다르다!
-  * camelCase
+- React DOM attributes(속성) 문법이 html이랑 다르다!
+  * React DOM은 javaScript에 가깝기 때문에, camelCase로 표기한다.
+  * 예를들어, JSX에서 class 는 className 이 되며, tabindex 는 tabIndex 가 된다.
 - DOM 요소객체를 생성하는데 비용이 많이듬. 대신 React는 객체니까 생성비용이 아주아주 적게듬. 
 - React DOM이라는 라이브러리가 우리를 대신해서 DOM에 appendChild해쥼
-- `<div id="root"></div>` “루트” DOM 노드
+- `<div id="root"></div>` “루트” DOM 노드를 사용해서 그린다. index.html의 root를 index.js에서 받아옴
+```js
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
 - React로 구축한 어플리케이션은 보통 하나의 루트 DOM 노드를 가집니다. React를 기존 앱에 통합하는 경우, 원하는 만큼의 여러 루트 DOM 노드를 만들 수도 있습니다. => 그러나 보통 하나의 루트 DOM 노드만을 사용함
-- `React element` VS `React Native`
-- React 요소는 변경 불가능 합니다. 한번 요소를 만들었다면, 그 자식이나 어트리뷰트를 변경할 수 없습니다. => 불변성(Immatability)
+- `React element` VS `React Native(모바일)`
+- React 요소는 변경 불가능 합니다. 한번 요소를 만들었다면, 그 자식이나 어트리뷰트(속성)를 변경할 수 없습니다. => 불변성(Immatability) 
+  ```js
+  //JavaScript 불변성의 예시
+  const str = 'JavaScript string is immutable!';
+  str.replace('!', '?'); // 'JavaScript string is immutable?'
+  str.slice(0, 10); // 'JavaScript'
+  str.toUpperCase(); // 'JAVASCRIPT STRING IS IMMUTABLE!'
+  console.log(str); // JavaScript string is immutable!
+  ```
   * 값을 변경하고 싶을때는 값을 새로 만든다.
-  * 배열이나 객체안의 값을 변경하고 싶을 때는 바로 변경했지만,
-    slice()처럼 마치 불변인 것처럼 씀.
+  * 배열이나 객체안의 값을 변경하고 싶을 때는 바로 변경했지만, slice()처럼 `마치 불변인 것처럼` 씀.
+    + 원본은 변하지 않음
   * React는 객체니까 변경가능 : React에서의 불변성은 변경할 수 없다뜻이 아니라 `처음부터 싹- 새로만든다는 의미`
-- 화면을 바꾸는 코드를 짠 적이 없음. 상태로부터 화면이 어떻게 그려지는지 => render() 메소드를 다 다시 호출해보고 화면을 다시 그림
-- setState()
+- 상태로부터 화면이 어떻게 그려지는지 => render() 메소드를 다 다시 호출해보고 화면을 다시 그림
+  * 근데 리액트는 똑똑해서 비교해서 바뀐 부분만 알아서 그림
+- setState()로 상태를 바꾼다
 - React는 꼭 필요한 부분만 갱신 : React DOM은 요소 및 그 자식을 이전 버전과 비교하고, DOM을 원하는 상태로 만드는 데 필요한 DOM 업데이트만 적용합니다.
-- todolist 예제
+- todolist 예제 : 우리는 여태까지 비워주고 다시 그려줬는데, 이것도 비효율적이었음! 바뀐건 '롸'가 추가될뿐, 비워줄 필요는 없는데 좋지 않을까? ` 리 액 트 는 그 것 이 가 능 합 니 다 `
   ```js
   textContent = '' 
   textContent = '롸'
-    ```
-    비효율적!
-    React는 진짜로 변경된 부분만 고쳐줌
-- 이전의 화면과 지금 그려야할 화면을 비교해서 변경된 부분만 그려줌
-
+  ```
 
 ## 컴포넌트와 props
 - 컴포넌트를 조립
 - props는 부모로부터 받은 데이터일뿐 수정할 수 없다. (수정/삭제ㄴㄴ)
 ```js
+  // 입력이 변경되므로 옳지않음!
 function withdraw(account, amount) {
   account.total -= amount;
 }
-// 입력이 변경되므로 옳지않음!
 ```
 - 우리가 render() 컨트롤 할 수 없기 때문에, `props에 대해 순수 함수`처럼 동작해야함
+  * 아래 코드 처럼 입력을 변경하지 않고, 동일한 입력에 대해 항상 동일한 결과를 반환
 ```js
 function sum(a, b) {
   return a + b;
