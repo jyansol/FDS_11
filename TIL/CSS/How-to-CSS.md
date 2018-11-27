@@ -96,6 +96,7 @@
 
 # Component DEMO page build 도구
 - [Storybook](https://storybook.js.org/)
+- `npm run stotybook`
 - style cording할때 쓰기 좋음
 - Loading stories dinamically
   * storybook폴더안의 config 파일 수정
