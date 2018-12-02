@@ -71,7 +71,7 @@
 # UI Framework - UI for React
 - framework를 사용할때, React version이 있는지 확인하고 쓰면 좋습니다!
 
-## react-semantic-ui
+## semantic-ui-react
 - [React-semantic-UI](https://react.semantic-ui.com/)
 - 여러가지 컴포넌트를 제공함
 - import가 적용된 `try it`소스를 복붙하면 됨!
