@@ -35,8 +35,11 @@
 - `reducer` action의 종류마다 상태를 어떻게 바꿀지 Redux에게 알려줘야함
   * 이전상태와 action을 받아서 다음 상태를 반환하는 함수
   * 다음상태를 계산해서 store에 저장
+
+## Redux에서 상태를 바꾸려면?
 => action이 dispatch되면, store는 알아서 이전상태랑 action을 가지고, 상태를 어떻게 변화시켜야할지 입력된 reducer를 통해 다음 상태를 계산함 
   상태가 바뀔 때마다 subscribe를 통해 Redux와 React(setState())의 상태를 바꿔줌.
+
 => 즉, action이 dispatch됐을때, setState() 할 수 있다!
 
 - `불변성`
