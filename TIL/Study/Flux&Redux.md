@@ -16,3 +16,4 @@ Flux 아키텍처의 가장 큰 특징으로는 '단방향 데이터 흐름(unid
 
 # 참고
 [Flux와Redux](http://webframeworks.kr/tutorials/react/flux/)
+[생활코딩 객체지향프로그래밍](https://opentutorials.org/course/743/6553)
